@@ -25,33 +25,7 @@
     <title>Scoreboard</title>
   </head>
   <body>
-    <script>
-      (function() {
-        if (!window.AppcuesReady) {
-          window.AppcuesReady = function(callback) {
-            callback && window.AppcuesReady.q.push(callback);
-            if (window.Appcues) {
-              while (window.AppcuesReady.q.length) {
-                cb = window.AppcuesReady.q.shift();
-                if (typeof cb === 'function') cb();
-              }
-            }
-          };
-          window.AppcuesReady.q = [];
-        }
-      })()
-    </script>
-    
-    <script>
-      // You could then call Appcues methods immediately 
-      // by calling AppcuesReady() with a callback:
-      AppcuesReady(function() {
-        Appcues.identify('userId', {email: 'test@appcues.com'});
-      });
-    </script>
-    
-    <!-- Load your Appcues script at any time later -->
-    <script src="//fast.appcues.com/23.js" async defer onload="AppcuesReady()"></script>    <div id="root"></div>
+    <script src="//fast.appcues.com/58420.js"></script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
